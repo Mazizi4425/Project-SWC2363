@@ -1,0 +1,92 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Header and Navigation Bar Styling */
+header {
+    background-color: #00008b; /* Dark blue background */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px; /* Adds spacing between navigation items */
+}
+
+.nav-list li {
+    display: inline-block;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-list a:hover {
+    background-color: #575fcf; /* Light blue hover */
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* Title Section Styling */
+.title {
+    text-align: center;
+    margin: 20px 0;
+    color: #00008b;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Content Section Styling */
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.image-container img {
+    width: 100%; /* Full-width image */
+    max-width: 100%; /* Ensure the image doesn't exceed container width */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.description h2 {
+    color: #00008b;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.description ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.description ul li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #333;
+}

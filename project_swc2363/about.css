@@ -1,0 +1,108 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    background-color: #00008b; /* Dark blue */
+    overflow: hidden;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #575fcf; /* Light blue hover effect */
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* Container Styling */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Text Section Styling */
+.text-section {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.text-section h2 {
+    color: #00008b; /* Dark blue heading */
+    font-size: 24px;
+    border-left: 4px solid #00008b;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.text-section p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+}
+
+/* Image Section Styling */
+.image-section {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center; /* Center images */
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Space between the images */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        flex: 1;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .text-section, .image-section {
+        max-width: 100%;
+        padding: 10px;
+    }
+}

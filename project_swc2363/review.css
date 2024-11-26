@@ -1,0 +1,86 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Header and Navigation Bar Styling */
+header {
+    background-color: #00008b; /* Dark blue background */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px; /* Adds spacing between navigation items */
+}
+
+.nav-list li {
+    display: inline-block;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-list a:hover {
+    background-color: #575fcf; /* Light blue hover */
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* Title Section Styling */
+.title {
+    text-align: center;
+    margin: 20px 0;
+    color: #00008b;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Review Section Styling */
+.review-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.review {
+    margin-bottom: 20px; /* Adds space between reviews */
+    text-align: center;
+}
+
+.review img {
+    width: 100%; /* Full-width images */
+    max-width: 1200px; /* Constrain maximum width */
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.review img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
